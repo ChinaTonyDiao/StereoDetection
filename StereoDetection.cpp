@@ -151,7 +151,7 @@ int main()
 		if (q == 'q' || flag == 1)
 		{
 			flag = 1;
-			SGBM->compute(framL, framR, disparity);
+		SGBM->compute(framL, framR, disparity);
 			reprojectImageTo3D(disparity, threeD, Q, true);
 			normalize(disparity, disparity, 0, 255, NORM_MINMAX, CV_8U);
 			threeD *= 16;
